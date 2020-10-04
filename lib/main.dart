@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.deepPurple,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -90,18 +90,19 @@ class MyApp extends StatelessWidget {
                 child: ListTile(
                   leading: Text(
                     '@',
+                    style: TextStyle(
+                      color: Colors.red,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  title: Text(
+                    'Washimingo-kun',
                     style: GoogleFonts.lato(
                       textStyle: Theme.of(context).textTheme.display1,
                       fontSize: 20,
                       fontWeight: FontWeight.w700,
                       fontStyle: FontStyle.italic,
-                    ),
-                  ),
-                  title: Text(
-                    'Washimingo-kun',
-                    style: TextStyle(
-                      color: Colors.red,
-                      fontSize: 18.0,
                     ),
                   ),
                 ),
@@ -118,13 +119,17 @@ class MyApp extends StatelessWidget {
                   ),
                   title: Text(
                     'Av. Las Parcelas 4833, Santiago',
-                    style: TextStyle(
-                      color: Colors.red,
-                      fontSize: 18.0,
+                    style: GoogleFonts.lato(
+                      textStyle: Theme.of(context).textTheme.display1,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w700,
+                      fontStyle: FontStyle.italic,
                     ),
                   ),
                 ),
               ),
+
+              // Nueva carta
               Card(
                 margin: EdgeInsets.symmetric(
                   vertical: 10.0,
@@ -137,9 +142,11 @@ class MyApp extends StatelessWidget {
                   ),
                   title: Text(
                     'Soltero ;v',
-                    style: TextStyle(
-                      color: Colors.red,
-                      fontSize: 18.0,
+                    style: GoogleFonts.lato(
+                      textStyle: Theme.of(context).textTheme.display1,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w700,
+                      fontStyle: FontStyle.italic,
                     ),
                   ),
                 ),
